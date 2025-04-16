@@ -44,16 +44,15 @@ Develop an accurate and efficient object detection model for autonomous vehicles
 
 ```mermaid
 flowchart TD
-    A[Download & Clean Dataset] --> B[Exploratory Data Analysis (EDA)]
+    A[Download and Clean Dataset] --> B[EDA]
     B --> C[Remove Unannotated Images]
     C --> D[Train/Validation Split]
-    D --> E[Advanced Preprocessing & Augmentation]
-    E --> F[Model: CNN + FPN + Transformer]
-    F --> G[Training (Focal Loss, Class Weights)]
-    G --> H[Evaluation (mAP, Per-Class AP, Small Object AP)]
-    H --> I[Real-Time Inference Speed]
-    F --> J[Temporal Modeling (LSTM/GRU Stub)]
-    style J fill:#f9f,stroke:#333,stroke-width:2px
+    D --> E[Preprocessing and Augmentation]
+    E --> F[Model: CNN-FPN-Transformer]
+    F --> G[Training]
+    G --> H[Evaluation]
+    H --> I[Inference Speed]
+    F --> J[Temporal Modeling Stub]
 ```
 
 ---
